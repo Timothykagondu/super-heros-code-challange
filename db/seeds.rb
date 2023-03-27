@@ -1,4 +1,5 @@
 puts "seeding ...."
+
 Hero.destroy_all
 Power.destroy_all
 HeroPower.destroy_all
@@ -15,4 +16,5 @@ HeroPower.create(strength: "Strong", power_id: power_one.id, hero_id: hero_one.i
 HeroPower.create(strength: "Weak", power_id: power_two.id, hero_id: hero_two.id)
 HeroPower.create(strength: "Strong", power_id: power_three.id, hero_id: hero_three.id)
 HeroPower.create(strength: "Average", power_id: power_one.id, hero_id: hero_three.id)
+
 puts "complete"

@@ -1,3 +1,4 @@
 class SingleheroSerializer < ActiveModel::Serializer
-  attributes :id, :serializer
+  attributes :id, :name, :super_name
+  has_many :powers
 end
